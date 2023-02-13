@@ -10,5 +10,11 @@
   "patchesLinks": [],
   "installedFiles": [],
   "dependencies": [],
-  "options": []
+  "options": [
+    {
+      "name": "Make-Ca",
+      "description": "Enable make-ca support for certificates",
+      "active": true
+    }
+  ]
 }
