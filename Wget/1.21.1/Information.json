@@ -9,7 +9,13 @@
   "md5sums": ["b939ee54eabc6b9b0a8d5c03ace879c9"],
   "patchesLinks": [],
   "installedFiles": [],
-  "dependencies": [],
+  "dependencies": [
+    {
+      "name": "SystemBase",
+      "version": "0.2.0",
+      "options": []
+    }
+  ],
   "options": [
     {
       "name": "Make-Ca",
