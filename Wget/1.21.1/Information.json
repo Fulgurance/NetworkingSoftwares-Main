@@ -2,7 +2,9 @@
   "port": "NetworkingSoftwares-Main",
   "name": "Wget",
   "version": "1.21.1",
-  "architectures": ["x86_64"],
+  "architectures": [
+    "x86_64"
+  ],
   "description": "Free software package for retrieving files using HTTP, HTTPS, FTP and FTPS",
   "website": "https://www.gnu.org/software/wget/",
   "installedFiles": [],
@@ -25,7 +27,8 @@
           "version": "1.7.0",
           "options": []
         }
-      ]
+      ],
+      "kernelDependencies": []
     }
   ]
 }
