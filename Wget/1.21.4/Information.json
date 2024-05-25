@@ -2,14 +2,13 @@
   "port": "NetworkingSoftwares-Main",
   "name": "Wget",
   "version": "1.21.4",
-  "architectures": [
-    "x86_64"
-  ],
+  "architectures": ["x86_64"],
   "description": "Free software package for retrieving files using HTTP, HTTPS, FTP and FTPS",
   "website": "https://www.gnu.org/software/wget/",
   "installedFiles": [],
   "dependencies": [
     {
+      "port": "SystemBase-Main",
       "name": "SystemBase",
       "version": ">=0.2.0",
       "options": []
@@ -23,6 +22,7 @@
       "active": true,
       "dependencies": [
         {
+          "port": "Security-Main",
           "name": "Make-Ca",
           "version": ">=1.12.0",
           "options": []
