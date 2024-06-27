@@ -1,0 +1,23 @@
+{
+  "port": "NetworkingSoftwares-Main",
+  "name": "Slack",
+  "version": "4.38.125",
+  "architectures": ["x86_64"],
+  "description": "Cloud-based team communication platform",
+  "website": "https://slack.com/",
+  "installedFiles": [],
+  "dependencies": [
+    {
+      "port": "SystemBase-Main",
+      "name": "SystemBase",
+      "version": ">=0.2.0",
+      "options": []
+    }
+  ],
+  "kernelDependencies": [],
+  "options": [],
+  "uniqueDependencies": [],
+  "uniqueOptions": [],
+  "selectedDependencies": [],
+  "allowCodependencies": []
+}

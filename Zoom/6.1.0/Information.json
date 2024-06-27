@@ -1,0 +1,23 @@
+{
+  "port": "NetworkingSoftwares-Main",
+  "name": "Zoom",
+  "version": "6.1.0",
+  "architectures": ["x86_64"],
+  "description": "Video conferencing and web conferencing platform",
+  "website": "https://zoom.us/",
+  "installedFiles": [],
+  "dependencies": [
+    {
+      "port": "SystemBase-Main",
+      "name": "SystemBase",
+      "version": ">=0.2.0",
+      "options": []
+    }
+  ],
+  "kernelDependencies": [],
+  "options": [],
+  "uniqueDependencies": [],
+  "uniqueOptions": [],
+  "selectedDependencies": [],
+  "allowCodependencies": []
+}
