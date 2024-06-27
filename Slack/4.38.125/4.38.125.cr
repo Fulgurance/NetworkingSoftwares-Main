@@ -13,8 +13,8 @@ class Target < ISM::Software
     def install
         super
 
-        runChownCommand("root:root /usr/share/discord/chrome-sandbox")
-        runChmodCommand("4755 /usr/share/discord/chrome-sandbox")
+        runChownCommand("root:root /usr/lib/slack/chrome-sandbox")
+        runChmodCommand("4755 /usr/lib/slack/chrome-sandbox")
     end
 
 end
