@@ -13,7 +13,8 @@ class Target < ISM::Software
     def install
         super
 
-        runChownCommand("root:root /usr/lib/slack/chrome-sandbox")
+        runChownCommand("-R root:root /usr/lib/slack")
+        runChownCommand("root:root /usr/share/applications/slack.desktop")
         runChmodCommand("4755 /usr/lib/slack/chrome-sandbox")
     end
 
