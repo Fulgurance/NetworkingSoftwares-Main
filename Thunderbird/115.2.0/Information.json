@@ -1,0 +1,157 @@
+{
+  "port": "NetworkingSoftwares-Main",
+  "name": "Thunderbird",
+  "version": "115.2.0",
+  "architectures": ["x86_64"],
+  "description": "Email, calendar, and contacts app that maximises your freedoms",
+  "website": "https://www.thunderbird.net/en-GB/",
+  "installedFiles": [],
+  "dependencies": [
+    {
+      "port": "ProgrammingTools-Main",
+      "name": "Cbindgen",
+      "version": ">=0.24.3",
+      "options": []
+    },
+    {
+      "port": "BaseLibraries-Main",
+      "name": "Dbus-Glib",
+      "version": ">=0.112.0",
+      "options": []
+    },
+    {
+      "port": "GraphicsLibraries-Main",
+      "name": "Gtk+",
+      "version": ">=3.24.38",
+      "options": []
+    },
+    {
+      "port": "ProgrammingLanguages-Main",
+      "name": "Llvm",
+      "version": ">=16.0.5",
+      "options": ["Clang"]
+    },
+    {
+      "port": "ProgrammingTools-Main",
+      "name": "Nodejs",
+      "version": ">=18.17.1",
+      "options": []
+    },
+    {
+      "port": "MultimediaSoftwares-Main",
+      "name": "Pulseaudio",
+      "version": ">=16.1.0",
+      "options": []
+    },
+    {
+      "port": "ProgrammingLanguages-Main",
+      "name": "Python",
+      "version": ">=3.11.4",
+      "options": ["Sqlite"]
+    },
+    {
+      "port": "GraphicsLibraries-Main",
+      "name": "Startup-Notification",
+      "version": ">=0.12.0",
+      "options": []
+    },
+    {
+      "port": "Archivers-Main",
+      "name": "Zip",
+      "version": ">=3.0.0",
+      "options": []
+    },
+    {
+      "port": "Archivers-Main",
+      "name": "Unzip",
+      "version": ">=6.0.0",
+      "options": []
+    },
+    {
+      "port": "NetworkingLibraries-Main",
+      "name": "Libevent",
+      "version": ">=2.1.12",
+      "options": []
+    },
+    {
+      "port": "MultimediaLibraries-Main",
+      "name": "Libvpx",
+      "version": ">=1.13.0",
+      "options": []
+    },
+    {
+      "port": "ProgrammingTools-Main",
+      "name": "Nasm",
+      "version": ">=2.16.1",
+      "options": []
+    },
+    {
+      "port": "BaseLibraries-Main",
+      "name": "Nspr",
+      "version": ">=4.35.0",
+      "options": []
+    },
+    {
+      "port": "SecurityLibraries-Main",
+      "name": "Nss",
+      "version": ">=3.92.0",
+      "options": []
+    }
+  ],
+  "kernelDependencies": [],
+  "options": [
+    {
+      "name": "Elf-Hack",
+      "description": "Enable elf-hack build option support to improve startup process (can cause failed installs)",
+      "active": false,
+      "dependencies": [],
+      "kernelDependencies": []
+    },
+    {
+      "name": "Pciutils",
+      "description": "Enable pciutils support",
+      "active": false,
+      "dependencies": [
+        {
+          "port": "Utilities-Main",
+          "name": "Pciutils",
+          "version": ">=3.10.0",
+          "options": []
+        }
+      ],
+      "kernelDependencies": []
+    },
+    {
+      "name": "Wget",
+      "description": "Enable wget support",
+      "active": false,
+      "dependencies": [
+        {
+          "port": "NetworkingSoftwares-Main",
+          "name": "Wget",
+          "version": ">=1.21.4",
+          "options": []
+        }
+      ],
+      "kernelDependencies": []
+    },
+    {
+      "name": "Wireless-Tools",
+      "description": "Enable wireless-tools support",
+      "active": false,
+      "dependencies": [
+        {
+          "port": "NetworkingTools-Main",
+          "name": "Wireless-Tools",
+          "version": ">=29.0.0",
+          "options": []
+        }
+      ],
+      "kernelDependencies": []
+    }
+  ],
+  "uniqueDependencies": [],
+  "uniqueOptions": [],
+  "selectedDependencies": [],
+  "allowCodependencies": []
+}
