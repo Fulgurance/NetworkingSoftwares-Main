@@ -8,6 +8,12 @@
   "installedFiles": [],
   "dependencies": [
     {
+      "port": "SystemGroups-Main",
+      "name": "Wireshark",
+      "version": ">=0.1.0",
+      "options": []
+    },
+    {
       "port": "ProgrammingTools-Main",
       "name": "Cmake",
       "version": ">=3.27.2",
