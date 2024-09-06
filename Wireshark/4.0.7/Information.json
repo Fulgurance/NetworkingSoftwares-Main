@@ -36,10 +36,17 @@
       "name": "Qt",
       "version": ">=5.15.10",
       "options": []
+    },
+    {
+      "port": "NetworkingLibraries-Main",
+      "name": "C-Ares",
+      "version": ">=1.19.1",
+      "options": []
     }
   ],
-  "kernelDependencies": [ "CONFIG_NET",
-                          "CONFIG_PACKET"
+  "kernelDependencies": [
+    "CONFIG_NET",
+    "CONFIG_PACKET"
   ],
   "options": [
     {
