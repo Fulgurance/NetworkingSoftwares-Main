@@ -1,0 +1,58 @@
+{
+  "port": "NetworkingSoftwares-Main",
+  "name": "Wireshark",
+  "version": "4.0.7",
+  "architectures": ["x86_64"],
+  "description": "The world's most popular network protocol analyzer",
+  "website": "https://www.wireshark.org/",
+  "installedFiles": [],
+  "dependencies": [
+    {
+      "port": "ProgrammingTools-Main",
+      "name": "Cmake",
+      "version": ">=3.27.2",
+      "options": []
+    },
+    {
+      "port": "BaseLibraries-Main",
+      "name": "Glib",
+      "version": ">=2.76.4",
+      "options": []
+    },
+    {
+      "port": "SecurityLibraries-Main",
+      "name": "Libgcrypt",
+      "version": ">=1.10.2",
+      "options": []
+    },
+    {
+      "port": "BaseLibraries-Main",
+      "name": "Qt",
+      "version": ">=5.15.10",
+      "options": []
+    }
+  ],
+  "kernelDependencies": [ "CONFIG_NET",
+                          "CONFIG_PACKET"
+  ],
+  "options": [
+    {
+      "name": "Libcap",
+      "description": "Enable libcap support",
+      "active": true,
+      "dependencies": [
+        {
+          "port": "NetworkingLibraries-Main",
+          "name": "Libcap",
+          "version": ">=1.10.4",
+          "options": []
+        }
+      ],
+      "kernelDependencies": []
+    }
+  ],
+  "uniqueDependencies": [],
+  "uniqueOptions": [],
+  "selectedDependencies": [],
+  "allowCodependencies": []
+}
