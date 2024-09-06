@@ -37,13 +37,13 @@
   ],
   "options": [
     {
-      "name": "Libcap",
-      "description": "Enable libcap support",
+      "name": "Libpcap",
+      "description": "Enable libpcap support",
       "active": true,
       "dependencies": [
         {
           "port": "NetworkingLibraries-Main",
-          "name": "Libcap",
+          "name": "Libpcap",
           "version": ">=1.10.4",
           "options": []
         }
