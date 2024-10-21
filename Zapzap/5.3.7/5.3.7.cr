@@ -10,13 +10,8 @@ class Target < ISM::Software
     def prepareInstallation
         super
 
-        makeDirectory("#{builtSoftwareDirectoryPath}/#{Ism.settings.rootPath}/usr")
-
-        moveFile(   path:       "#{buildDirectoryPath}/build/lib",
-                    newPath:    "#{builtSoftwareDirectoryPath}/#{Ism.settings.rootPath}/lib")
-
-        moveFile(   path:       "#{buildDirectoryPath}/share",
-                    newPath:    "#{builtSoftwareDirectoryPath}/#{Ism.settings.rootPath}/usr/share")
+        runPythonCommand(   arguments: "setup.py install --prefix #{builtSoftwareDirectoryPath}/#{Ism.settings.rootPath}",
+                            path: buildDirectoryPath)
     end
 
 end
