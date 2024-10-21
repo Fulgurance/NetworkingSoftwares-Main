@@ -1,0 +1,41 @@
+{
+  "port": "NetworkingSoftwares-Main",
+  "name": "Zapzap",
+  "version": "5.3.7",
+  "architectures": ["x86_64"],
+  "description": "WhatsApp desktop application written in Pyqt6 + PyQt6-WebEngine.",
+  "website": "https://github.com/rafatosta/zapzap",
+  "installedFiles": [],
+  "dependencies": [
+    {
+      "port": "BaseLibraries-Main",
+      "name": "PyQt6",
+      "version": ">=0.0.0",
+      "options": []
+    },
+    {
+      "port": "BaseLibraries-Main",
+      "name": "PyQt6-WebEngine",
+      "version": ">=0.0.0",
+      "options": []
+    },
+    {
+      "port": "BaseLibraries-Main",
+      "name": "Dbus-Python",
+      "version": ">=0.0.0",
+      "options": []
+    },
+    {
+      "port": "BaseLibraries-Main",
+      "name": "Python-Gettext",
+      "version": ">=0.0.0",
+      "options": []
+    }
+  ],
+  "kernelDependencies": [],
+  "options": [],
+  "uniqueDependencies": [],
+  "uniqueOptions": [],
+  "selectedDependencies": [],
+  "allowCodependencies": []
+}
