@@ -12,7 +12,7 @@ class Target < ISM::Software
 
         makeDirectory("#{builtSoftwareDirectoryPath}/#{Ism.settings.rootPath}/usr/share")
 
-        moveFile(   path:       "#{buildDirectoryPath}/lib",
+        moveFile(   path:       "#{buildDirectoryPath}/build/lib",
                     newPath:    "#{builtSoftwareDirectoryPath}/#{Ism.settings.rootPath}/lib")
 
         moveFile(   path:       "#{buildDirectoryPath}/share",
