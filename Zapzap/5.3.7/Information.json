@@ -30,6 +30,12 @@
       "name": "Python-Gettext",
       "version": ">=0.0.0",
       "options": []
+    },
+    {
+      "port": "BaseLibraries-Main",
+      "name": "Qt",
+      "version": ">=6.7.3",
+      "options": []
     }
   ],
   "kernelDependencies": [],
