@@ -1,0 +1,71 @@
+{
+  "port": "NetworkingSoftwares-Main",
+  "name": "Wireshark",
+  "version": "4.4.1",
+  "architectures": ["x86_64"],
+  "description": "The world's most popular network protocol analyzer",
+  "website": "https://www.wireshark.org/",
+  "installedFiles": [],
+  "dependencies": [
+    {
+      "port": "SystemGroups-Main",
+      "name": "Wireshark",
+      "version": ">=0.1.0",
+      "options": []
+    },
+    {
+      "port": "ProgrammingTools-Main",
+      "name": "Cmake",
+      "version": ">=3.27.2",
+      "options": []
+    },
+    {
+      "port": "BaseLibraries-Main",
+      "name": "Glib",
+      "version": ">=2.76.4",
+      "options": []
+    },
+    {
+      "port": "SecurityLibraries-Main",
+      "name": "Libgcrypt",
+      "version": ">=1.10.2",
+      "options": []
+    },
+    {
+      "port": "BaseLibraries-Main",
+      "name": "Qt",
+      "version": ">=5.0.0 ~ <6.0.0",
+      "options": []
+    },
+    {
+      "port": "NetworkingLibraries-Main",
+      "name": "C-Ares",
+      "version": ">=1.19.1",
+      "options": []
+    }
+  ],
+  "kernelDependencies": [
+    "CONFIG_NET",
+    "CONFIG_PACKET"
+  ],
+  "options": [
+    {
+      "name": "Libpcap",
+      "description": "Enable libpcap support",
+      "active": true,
+      "dependencies": [
+        {
+          "port": "NetworkingLibraries-Main",
+          "name": "Libpcap",
+          "version": ">=1.10.4",
+          "options": []
+        }
+      ],
+      "kernelDependencies": []
+    }
+  ],
+  "uniqueDependencies": [],
+  "uniqueOptions": [],
+  "selectedDependencies": [],
+  "allowCodependencies": []
+}

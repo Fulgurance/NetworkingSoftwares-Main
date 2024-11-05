@@ -1,0 +1,23 @@
+{
+  "port": "NetworkingSoftwares-Main",
+  "name": "Discord",
+  "version": "0.0.73",
+  "architectures": ["x86_64"],
+  "description": "Instant messaging and VoIP social platform",
+  "website": "https://discord.com/",
+  "installedFiles": [],
+  "dependencies": [
+    {
+      "port": "Utilities-Main",
+      "name": "Cups",
+      "version": ">=2.4.6",
+      "options": []
+    }
+  ],
+  "kernelDependencies": [],
+  "options": [],
+  "uniqueDependencies": [],
+  "uniqueOptions": [],
+  "selectedDependencies": [],
+  "allowCodependencies": []
+}
