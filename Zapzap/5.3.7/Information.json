@@ -36,6 +36,12 @@
       "name": "Qt",
       "version": ">=6.7.3",
       "options": []
+    },
+    {
+      "port": "BaseLibraries-Main",
+      "name": "Sip",
+      "version": ">=6.8.6",
+      "options": []
     }
   ],
   "kernelDependencies": [],
