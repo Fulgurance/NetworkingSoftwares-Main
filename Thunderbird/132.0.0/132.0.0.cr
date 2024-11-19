@@ -39,18 +39,14 @@ class Target < ISM::Software
 
         runPythonCommand(   arguments:      "./mach configure",
                             path:           buildDirectoryPath,
-                            environment:    {   "PATH" => "/usr/lib/llvm/#{softwareMajorVersion("@ProgrammingLanguages-Main:Llvm")}/bin:$PATH",
-                                                "MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE" => "none",
-                                                "MOZBUILD_STATE_PATH" => "mozbuild"})
+                            environment:    {   "PATH" => "/usr/lib/llvm/#{softwareMajorVersion("@ProgrammingLanguages-Main:Llvm")}/bin:$PATH"})
     end
 
     def build
         super
 
         runPythonCommand(   arguments:      "./mach build",
-                            path:           buildDirectoryPath,
-                            environment:    {   "MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE" => "none",
-                                                "MOZBUILD_STATE_PATH" => "mozbuild"})
+                            path:           buildDirectoryPath)
     end
     
     def prepareInstallation
@@ -58,8 +54,7 @@ class Target < ISM::Software
 
         runPythonCommand(   arguments:      "./mach install",
                             path:           buildDirectoryPath,
-                            environment:    {   "MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE" => "none",
-                                                "DESTDIR" => "#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}"})
+                            environment:    {"DESTDIR" => "#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}"})
 
         makeDirectory("#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}usr/share/applications")
 
