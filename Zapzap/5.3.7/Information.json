@@ -33,12 +33,6 @@
     },
     {
       "port": "BaseLibraries-Main",
-      "name": "Qt",
-      "version": ">=6.7.3",
-      "options": []
-    },
-    {
-      "port": "BaseLibraries-Main",
       "name": "PyQt6-Sip",
       "version": ">=13.8.0",
       "options": []
