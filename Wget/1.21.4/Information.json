@@ -22,7 +22,7 @@
       "active": true,
       "dependencies": [
         {
-          "port": "Security-Main",
+          "port": "SecuritySoftwares-Main",
           "name": "Make-Ca",
           "version": ">=1.12.0",
           "options": []
