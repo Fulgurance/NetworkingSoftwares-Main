@@ -23,7 +23,7 @@ class Target < ISM::Software
         pythonData = <<-CODE
         pathappend /usr/lib/python#{majorVersion}.#{minorVersion}/site-packages/zapzap-5.3-py#{majorVersion}.#{minorVersion}.egg PYTHONPATH
         CODE
-        fileUpdateData("#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}etc/profile.d/python.sh",pythonData)
+        fileUpdateContent("#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}etc/profile.d/python.sh",pythonData)
     end
 
 end
