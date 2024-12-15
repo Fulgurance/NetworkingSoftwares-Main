@@ -21,7 +21,7 @@ class Target < ISM::Software
         makeDirectory("#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}etc/profile.d")
 
         pythonData = <<-CODE
-        pathappend /usr/lib/python#{softwareMajorVersion("@ProgrammingLanguages-Main:Python")}.#{softwareMinorVersion("@ProgrammingLanguages-Main:Python")}/site-packages/zapzap-5.3-py#{majorVersion}.#{minorVersion}.egg PYTHONPATH
+        pathappend /usr/lib/python#{softwareMajorVersion("@ProgrammingLanguages-Main:Python")}.#{softwareMinorVersion("@ProgrammingLanguages-Main:Python")}/site-packages/zapzap-#{softwareMajorVersion("@ProgrammingLanguages-Main:Python")}.#{softwareMinorVersion("@ProgrammingLanguages-Main:Python")}-py#{majorVersion}.#{minorVersion}.egg PYTHONPATH
         CODE
         fileWriteData("#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}etc/profile.d/python.sh",pythonData)
     end
