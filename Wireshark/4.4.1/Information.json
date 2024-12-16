@@ -42,6 +42,12 @@
       "name": "C-Ares",
       "version": ">=1.19.1",
       "options": []
+    },
+    {
+      "port": "MultimediaLibraries-Main",
+      "name": "Speexdsp",
+      "version": ">=1.2.1",
+      "options": []
     }
   ],
   "kernelDependencies": [
