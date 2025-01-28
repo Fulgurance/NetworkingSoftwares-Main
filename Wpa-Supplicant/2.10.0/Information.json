@@ -1,0 +1,101 @@
+{
+  "port": "NetworkingSoftwares-Main",
+  "name": "Wpa-Supplicant",
+  "version": "2.10.0",
+  "architectures": ["x86_64"],
+  "description": "WPA Supplicant with support for WPA and WPA2 (IEEE 802.11i / RSN)",
+  "website": "https://w1.fi",
+  "installedFiles": [],
+  "dependencies": [
+    {
+      "port": "NetworkingLibraries-Main",
+      "name": "Libnl",
+      "version": ">=3.7.0",
+      "options": []
+    }
+  ],
+  "kernelDependencies": [
+    "CONFIG_NET",
+    "CONFIG_WIRELESS",
+    "CONFIG_CFG80211",
+    "CONFIG_MAC80211",
+    "CONFIG_NETDEVICES",
+    "CONFIG_WLAN"
+  ],
+  "options": [
+    {
+      "name": "Openrc",
+      "description": "Enable openrc support",
+      "active": true,
+      "dependencies": [
+        {
+          "port": "InitSystems-Main",
+          "name": "Openrc",
+          "version": ">=0.46.0",
+          "options": []
+        }
+      ],
+      "kernelDependencies": []
+    },
+    {
+      "name": "Desktop-File-Utils",
+      "description": "Enable desktop-file-utils support to run update-desktop-database",
+      "active": false,
+      "dependencies": [
+        {
+          "port": "Utilities-Main",
+          "name": "Desktop-File-Utils",
+          "version": ">=0.26.0",
+          "options": []
+        }
+      ],
+      "kernelDependencies": []
+    },
+    {
+      "name": "Dbus",
+      "description": "Enable dbus support (required for NetworkManager)",
+      "active": false,
+      "dependencies": [
+        {
+          "port": "Utilities-Main",
+          "name": "Dbus",
+          "version": ">=1.14.8",
+          "options": []
+        }
+      ],
+      "kernelDependencies": []
+    },
+    {
+      "name": "Libxml2",
+      "description": "Enable libxml2 support (required for NetworkManager)",
+      "active": false,
+      "dependencies": [
+        {
+          "port": "BaseLibraries-Main",
+          "name": "Libxml2",
+          "version": ">=2.10.4",
+          "options": []
+        }
+      ],
+      "kernelDependencies": []
+    },
+    {
+      "name": "Qtbase",
+      "description": "Enable qtbase support",
+      "active": false,
+      "dependencies": [
+        {
+          "port": "QtLibraries-Main",
+          "name": "Qtbase",
+          "version": ">=5.0.0",
+          "options": []
+        }
+      ],
+      "kernelDependencies": []
+    }
+  ],
+  "uniqueDependencies": [],
+  "uniqueOptions": [],
+  "selectedDependencies": [],
+  "allowCodependencies": []
+}

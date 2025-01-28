@@ -1,0 +1,38 @@
+{
+  "port": "NetworkingSoftwares-Main",
+  "name": "Dnsmasq",
+  "version": "2.90.0",
+  "architectures": ["x86_64"],
+  "description": "Provides network infrastructure for small networks: DNS, DHCP, router advertisement and network boot",
+  "website": "https://thekelleys.org.uk/dnsmasq/doc.html",
+  "installedFiles": [],
+  "dependencies": [
+    {
+      "port": "SystemUsers-Main",
+      "name": "Dnsmasq",
+      "version": ">=0.1.0",
+      "options": []
+    }
+  ],
+  "kernelDependencies": [],
+  "options": [
+    {
+      "name": "Openrc",
+      "description": "Enable openrc support",
+      "active": true,
+      "dependencies": [
+        {
+          "port": "InitSystems-Main",
+          "name": "Openrc",
+          "version": ">=0.52.1",
+          "options": []
+        }
+      ],
+      "kernelDependencies": []
+    }
+  ],
+  "uniqueDependencies": [],
+  "uniqueOptions": [],
+  "selectedDependencies": [],
+  "allowCodependencies": []
+}

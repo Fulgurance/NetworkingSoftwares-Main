@@ -1,0 +1,66 @@
+{
+  "port": "NetworkingSoftwares-Main",
+  "name": "Bind",
+  "version": "9.18.18",
+  "architectures": ["x86_64"],
+  "description": "Open source software that implements the Domain Name System protocols for the Internet",
+  "website": "https://www.isc.org",
+  "installedFiles": [],
+  "dependencies": [
+    {
+      "port": "BaseLibraries-Main",
+      "name": "Libuv",
+      "version": ">=1.46.0",
+      "options": []
+    }
+  ],
+  "kernelDependencies": [],
+  "options": [
+    {
+      "name": "Json-C",
+      "description": "Enable json-c support",
+      "active": false,
+      "dependencies": [
+        {
+          "port": "BaseLibraries-Main",
+          "name": "Json-C",
+          "version": ">=0.17.0",
+          "options": []
+        }
+      ],
+      "kernelDependencies": []
+    },
+    {
+      "name": "Libcap",
+      "description": "Enable libcap support",
+      "active": false,
+      "dependencies": [
+        {
+          "port": "BaseLibraries-Main",
+          "name": "Libcap",
+          "version": "2.69.0",
+          "options": ["Linux-Pam"]
+        }
+      ],
+      "kernelDependencies": []
+    },
+    {
+      "name": "Nghttp2",
+      "description": "Enable nghttp2 support for DNS over HTTPS",
+      "active": true,
+      "dependencies": [
+        {
+          "port": "NetworkingLibraries-Main",
+          "name": "Nghttp2",
+          "version": ">=1.55.1",
+          "options": []
+        }
+      ],
+      "kernelDependencies": []
+    }
+  ],
+  "uniqueDependencies": [],
+  "uniqueOptions": [],
+  "selectedDependencies": [],
+  "allowCodependencies": []
+}

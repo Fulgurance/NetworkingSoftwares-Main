@@ -1,0 +1,28 @@
+{
+  "port": "NetworkingSoftwares-Main",
+  "name": "Wireless-Tools",
+  "version": "29.0.0",
+  "architectures": ["x86_64"],
+  "description": "Set of tools allowing to manipulate the Wireless Extensions",
+  "website": "https://hewlettpackard.github.io/wireless-tools",
+  "installedFiles": [],
+  "dependencies": [
+    {
+      "port": "SystemBase-Main",
+      "name": "SystemBase",
+      "version": ">=0.2.0",
+      "options": []
+    }
+  ],
+  "kernelDependencies": [
+    "CONFIG_NET",
+    "CONFIG_WIRELESS",
+    "CONFIG_CFG80211",
+    "CONFIG_CFG80211_WEXT"
+  ],
+  "options": [],
+  "uniqueDependencies": [],
+  "uniqueOptions": [],
+  "selectedDependencies": [],
+  "allowCodependencies": []
+}
