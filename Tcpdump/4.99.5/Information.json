@@ -1,0 +1,29 @@
+{
+  "port": "NetworkingSoftwares-Main",
+  "name": "Tcpdump",
+  "version": "4.99.5",
+  "architectures": ["x86_64"],
+  "description": "The TCPdump network dissector",
+  "website": "https://github.com/the-tcpdump-group/tcpdump",
+  "installedFiles": [],
+  "dependencies": [
+    {
+      "port": "ProgrammingTools-Main",
+      "name": "Cmake",
+      "version": ">=3.27.2",
+      "options": []
+    },
+    {
+      "port": "NetworkingLibraries-Main",
+      "name": "Libpcap",
+      "version": ">=1.10.4",
+      "options": []
+    }
+  ],
+  "kernelDependencies": [],
+  "options": [],
+  "uniqueDependencies": [],
+  "uniqueOptions": [],
+  "selectedDependencies": [],
+  "allowCodependencies": []
+}
