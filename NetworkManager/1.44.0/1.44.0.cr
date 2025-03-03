@@ -54,11 +54,4 @@ class Target < ISM::Software
         end
     end
 
-    def install
-        super
-
-        runChmodCommand("+x /etc/NetworkManager/dispatcher.d/10-openrc-status")
-        runChownCommand("root:root /etc/NetworkManager/dispatcher.d/10-openrc-status")
-    end
-
 end

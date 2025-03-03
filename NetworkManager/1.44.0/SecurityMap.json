@@ -5,6 +5,12 @@
       "user":   "root",
       "group":  "root",
       "mode":   "0755"
+    },
+    {
+      "target": "/etc/NetworkManager/dispatcher.d/10-openrc-status",
+      "user":   "root",
+      "group":  "root",
+      "mode":   "+x"
     }
   ]
 }
