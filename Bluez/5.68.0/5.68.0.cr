@@ -40,10 +40,4 @@ class Target < ISM::Software
                     type:   :symbolicLinkByOverwrite)
     end
 
-    def install
-        super
-
-        runChmodCommand("0755 /etc/bluetooth")
-    end
-
 end
