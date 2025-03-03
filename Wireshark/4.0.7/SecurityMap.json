@@ -5,6 +5,18 @@
       "user":   "root",
       "group":  "root",
       "mode":   "0755"
+    },
+    {
+      "target": "/usr/bin/tshark",
+      "user":   "root",
+      "group":  "wireshark",
+      "mode":   "6550"
+    },
+    {
+      "target": "/usr/bin/dumpcap",
+      "user":   "root",
+      "group":  "wireshark",
+      "mode":   "6550"
     }
   ]
 }

@@ -5,6 +5,24 @@
       "user":   "root",
       "group":  "root",
       "mode":   "0755"
+    },
+    {
+      "target": "/usr/share/discord",
+      "user":   "root",
+      "group":  "root",
+      "mode":   "0755"
+    },
+    {
+      "target": "/usr/share/applications/discord.desktop",
+      "user":   "root",
+      "group":  "root",
+      "mode":   "0755"
+    },
+    {
+      "target": "/usr/share/discord/chrome-sandbox",
+      "user":   "root",
+      "group":  "root",
+      "mode":   "4755"
     }
   ]
 }

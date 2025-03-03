@@ -30,15 +30,6 @@ class Target < ISM::Software
                         environment:    {"DESTDIR" => "#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}"})
     end
 
-    def install
-        super
-
-        runChownCommand("root:wireshark /usr/bin/tshark")
-        runChownCommand("root:wireshark /usr/bin/dumpcap")
-        runChmodCommand("6550 /usr/bin/tshark")
-        runChmodCommand("6550 /usr/bin/dumpcap")
-    end
-
     def showInformations
         super
 
