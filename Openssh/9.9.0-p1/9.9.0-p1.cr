@@ -76,10 +76,6 @@ class Target < ISM::Software
     def install
         super
 
-        if option("Linux-Pam")
-            runChmodCommand("644 /etc/pam.d/sshd")
-        end
-
         runSshKeygenCommand("-A")
     end
 

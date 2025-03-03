@@ -32,10 +32,4 @@ class Target < ISM::Software
         end
     end
 
-    def install
-        super
-
-        runChmodCommand("0700 /var/lib/dhcpcd")
-    end
-
 end

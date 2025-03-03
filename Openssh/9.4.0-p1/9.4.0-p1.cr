@@ -73,12 +73,4 @@ class Target < ISM::Software
         end
     end
 
-    def install
-        super
-
-        if option("Linux-Pam")
-            runChmodCommand("644 /etc/pam.d/sshd")
-        end
-    end
-
 end
