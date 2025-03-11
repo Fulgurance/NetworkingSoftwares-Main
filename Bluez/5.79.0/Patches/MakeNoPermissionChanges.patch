@@ -1,6 +1,6 @@
-diff -ur Bluez-5.79.0.old/Bluez-5.79.0/Makefile.am Bluez-5.79.0/Bluez-5.79.0/Makefile.am
---- Bluez-5.79.0.old/Bluez-5.79.0/Makefile.am	2024-11-01 19:18:33.000000000 +0000
-+++ Bluez-5.79.0/Bluez-5.79.0/Makefile.am	2025-03-11 18:09:39.604365772 +0000
+diff -ur a/Makefile.am b/Makefile.am
+--- a/Makefile.am	2024-11-01 19:18:33.000000000 +0000
++++ b/Makefile.am	2025-03-11 18:09:39.604365772 +0000
 @@ -31,10 +31,6 @@
  confdir = $(sysconfdir)/bluetooth
  statedir = $(localstatedir)/lib/bluetooth
