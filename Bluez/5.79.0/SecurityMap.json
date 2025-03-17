@@ -9,5 +9,18 @@
       "directoryMode":  "0755",
 
   },
-  "descriptors": []
+  "descriptors": [
+    {
+      "target": "/etc/bluetooth",
+      "user":   "root",
+      "group":  "root",
+      "mode":   "0555"
+    },
+    {
+      "target": "/var/lib/bluetooh",
+      "user":   "root",
+      "group":  "root",
+      "mode":   "0700"
+    }
+  ]
 }

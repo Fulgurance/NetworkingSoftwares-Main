@@ -9,5 +9,12 @@
       "directoryMode":  "0755",
 
   },
-  "descriptors": []
+  "descriptors": [
+    {
+      "target": "/etc/NetworkManager/dispatcher.d/10-openrc-status",
+      "user":   "root",
+      "group":  "root",
+      "mode":   "+x"
+    }
+  ]
 }

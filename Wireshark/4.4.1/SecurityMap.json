@@ -9,5 +9,18 @@
       "directoryMode":  "0755",
 
   },
-  "descriptors": []
+  "descriptors": [
+    {
+      "target": "/usr/bin/tshark",
+      "user":   "root",
+      "group":  "wireshark",
+      "mode":   "6550"
+    },
+    {
+      "target": "/usr/bin/dumpcap",
+      "user":   "root",
+      "group":  "wireshark",
+      "mode":   "6550"
+    }
+  ]
 }
