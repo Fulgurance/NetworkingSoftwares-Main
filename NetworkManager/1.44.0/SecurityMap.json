@@ -1,16 +1,13 @@
 {
-  "descriptors": [
-    {
-      "target": "Default",
-      "user":   "root",
-      "group":  "root",
-      "mode":   "0755"
-    },
-    {
-      "target": "/etc/NetworkManager/dispatcher.d/10-openrc-status",
-      "user":   "root",
-      "group":  "root",
-      "mode":   "+x"
-    }
-  ]
+  "defaultConfiguration":
+  {
+      "fileUser":       "root",
+      "fileGroup":      "root",
+      "fileMode":       "0644",
+      "directoryUser":  "root",
+      "directoryGroup": "root",
+      "directoryMode":  "0755",
+
+  },
+  "descriptors": []
 }
