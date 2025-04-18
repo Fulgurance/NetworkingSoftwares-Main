@@ -26,6 +26,14 @@ class Target < ISM::Software
         end
     end
 
+    def deploy
+        super
+
+        if Ism.settings.autoDeployServices
+            runRcUpdateCommand("add dnsmasq default")
+        end
+    end
+
     def showInformations
         super
 
