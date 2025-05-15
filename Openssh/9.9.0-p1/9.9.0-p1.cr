@@ -79,4 +79,12 @@ class Target < ISM::Software
         runSshKeygenCommand("-A")
     end
 
+    def deploy
+        if autoDeployServices
+            if option("Openrc")
+                runRcUpdateCommand("add sshd default")
+            end
+        end
+    end
+
 end
