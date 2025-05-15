@@ -47,4 +47,12 @@ class Target < ISM::Software
                     type:   :symbolicLinkByOverwrite)
     end
 
+    def deploy
+        if autoDeployServices
+            if option("Openrc")
+                runRcUpdateCommand("add bluetooth default")
+            end
+        end
+    end
+
 end

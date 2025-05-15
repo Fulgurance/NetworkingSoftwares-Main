@@ -88,4 +88,12 @@ class Target < ISM::Software
         end
     end
 
+    def deploy
+        if autoDeployServices
+            if option("Openrc")
+                runRcUpdateCommand("add wpa-supplicant default")
+            end
+        end
+    end
+
 end

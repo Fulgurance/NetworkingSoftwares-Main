@@ -32,4 +32,12 @@ class Target < ISM::Software
         showInfo("After the installation, if you wish a user able to use Dnsmasq, add it in the dnsmasq system group")
     end
 
+    def deploy
+        if autoDeployServices
+            if option("Openrc")
+                runRcUpdateCommand("add dnsmasq default")
+            end
+        end
+    end
+
 end

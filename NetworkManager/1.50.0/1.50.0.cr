@@ -56,4 +56,12 @@ class Target < ISM::Software
         end
     end
 
+    def deploy
+        if autoDeployServices
+            if option("Openrc")
+                runRcUpdateCommand("add networkmanager default")
+            end
+        end
+    end
+
 end

@@ -24,4 +24,12 @@ class Target < ISM::Software
         showInfo("After the installation, if you wish a user able to use Nordvpn, add it in the nordvpn system group")
     end
 
+    def deploy
+        if autoDeployServices
+            if option("Openrc")
+                runRcUpdateCommand("add nordvpn default")
+            end
+        end
+    end
+
 end
