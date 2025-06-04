@@ -33,6 +33,11 @@ class Target < ISM::Software
     end
 
     def deploy
+        super
+
+        runChownCommand("root:root /var/lib/dhcpcd")
+        runChmodCommand("0700 /var/lib/dhcpcd")
+
         if autoDeployServices
             if option("Openrc")
                 runRcUpdateCommand("add dhcpcd default")

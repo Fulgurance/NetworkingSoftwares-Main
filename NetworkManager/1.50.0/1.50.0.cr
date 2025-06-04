@@ -57,6 +57,11 @@ class Target < ISM::Software
     end
 
     def deploy
+        super
+
+        runChownCommand("root:root /etc/NetworkManager/dispatcher.d/10-openrc-status")
+        runChmodCommand("+x /etc/NetworkManager/dispatcher.d/10-openrc-status")
+
         if autoDeployServices
             if option("Openrc")
                 runRcUpdateCommand("add networkmanager default")

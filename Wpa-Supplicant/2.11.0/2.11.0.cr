@@ -89,6 +89,14 @@ class Target < ISM::Software
     end
 
     def deploy
+        super
+
+        runChownCommand("root:root /usr/share/dbus-1/system-services/fi.w1.wpa_supplicant1.service")
+        runChownCommand("root:root /etc/dbus-1/system.d/wpa_supplicant.conf")
+
+        runChmodCommand("0644 /usr/share/dbus-1/system-services/fi.w1.wpa_supplicant1.service")
+        runChmodCommand("0644 /etc/dbus-1/system.d/wpa_supplicant.conf")
+
         if autoDeployServices
             if option("Openrc")
                 runRcUpdateCommand("add wpa-supplicant default")

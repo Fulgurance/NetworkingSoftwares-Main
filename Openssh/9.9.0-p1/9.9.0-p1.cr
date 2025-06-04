@@ -80,6 +80,11 @@ class Target < ISM::Software
     end
 
     def deploy
+        super
+
+        runChownCommand("root:root /etc/pam.d/sshd")
+        runChmodCommand("0644 /etc/pam.d/sshd")
+
         if autoDeployServices
             if option("Openrc")
                 runRcUpdateCommand("add sshd default")
