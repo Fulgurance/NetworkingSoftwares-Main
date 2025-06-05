@@ -51,10 +51,7 @@ class Target < ISM::Software
         super
 
         runChownCommand("root:root /etc/bluetooth")
-        runChownCommand("root:root /var/lib/bluetooth")
-
         runChmodCommand("0555 /etc/bluetooth")
-        runChmodCommand("0700 /var/lib/bluetooth")
 
         if autoDeployServices
             if option("Openrc")
