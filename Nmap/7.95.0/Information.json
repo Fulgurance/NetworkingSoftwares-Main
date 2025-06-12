@@ -42,6 +42,12 @@
       "name": "PyGobject",
       "version": ">=3.50.0",
       "options": []
+    },
+    {
+      "port": "BaseLibraries-Main",
+      "name": "Pyproject-Hooks",
+      "version": ">=1.2.0",
+      "options": []
     }
   ],
   "kernelDependencies": [],
