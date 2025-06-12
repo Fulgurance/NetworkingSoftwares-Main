@@ -48,6 +48,12 @@
       "name": "Pyproject-Hooks",
       "version": ">=1.2.0",
       "options": []
+    },
+    {
+      "port": "BaseLibraries-Main",
+      "name": "Packaging",
+      "version": ">=25.0.0",
+      "options": []
     }
   ],
   "kernelDependencies": [],
