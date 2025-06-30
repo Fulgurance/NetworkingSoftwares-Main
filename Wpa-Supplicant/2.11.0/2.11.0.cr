@@ -35,9 +35,9 @@ class Target < ISM::Software
         CONFIG_SMARTCARD=y
         CONFIG_WPS=y
         CFLAGS += -I/usr/include/libnl3
-        CONFIG_CTRL_IFACE_DBUS=y
-        CONFIG_CTRL_IFACE_DBUS_NEW=y
-        CONFIG_CTRL_IFACE_DBUS_INTRO=y
+        CONFIG_CTRL_IFACE_DBUS=#{option("Dbus") ? "y" : "n"}
+        CONFIG_CTRL_IFACE_DBUS_NEW=#{option("Dbus") ? "y" : "n"}
+        CONFIG_CTRL_IFACE_DBUS_INTRO=#{option("Dbus") ? "y" : "n"}
         CODE
         fileWriteData("#{buildDirectoryPath}/.config",configData)
     end
