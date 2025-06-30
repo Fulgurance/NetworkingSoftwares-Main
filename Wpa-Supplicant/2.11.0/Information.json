@@ -54,7 +54,7 @@
     {
       "name": "Dbus",
       "description": "Enable dbus support (required for NetworkManager)",
-      "active": false,
+      "active": true,
       "dependencies": [
         {
           "port": "Utilities-Main",
