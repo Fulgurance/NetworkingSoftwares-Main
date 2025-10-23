@@ -1,0 +1,23 @@
+PORT
+    NetworkingSoftwares-Main
+NAME
+    Iproute2
+VERSION
+    6.16.0
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    Collection of utilities for controlling TCP / IP networking and traffic control in Linux
+WEBSITE
+    https://www.kernel.org/pub/linux/utils/net/iproute2/
+DEPENDENCIES
+        @SystemBase-Main:SystemBase>=0.2.0
+        @Utilities-Main:Flex>=2.6.4
+        @BaseLibraries-Main:Libcap>=2.69.0
+        @BaseLibraries-Main:Libelf>=0.189.0
+        @BaseLibraries-Main:Zlib>=1.2.13
+KERNELDEPENDENCIES
+OPTIONS
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES

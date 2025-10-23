@@ -1,0 +1,33 @@
+PORT
+    NetworkingSoftwares-Main
+NAME
+    Dhcpcd
+VERSION
+    10.1.0
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    DHCP / IPv4LL / IPv6RA / DHCPv6 client
+WEBSITE
+    https://github.com/NetworkConfiguration/dhcpcd/
+DEPENDENCIES
+        @SystemUsers-Main:Dhcpcd>=0.1.0
+KERNELDEPENDENCIES
+OPTIONS
+    name: Openrc
+    description: Enable openrc support
+    active: false
+    dependencies:
+        @InitSystems-Main:Openrc>=0.46.0
+    kernelDependencies:
+
+    name: Llvm
+    description: Enable llvm support
+    active: false
+    dependencies:
+        @ProgrammingLanguagess-Main:Llvm>=16.0.5(Clang)
+    kernelDependencies:
+
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES

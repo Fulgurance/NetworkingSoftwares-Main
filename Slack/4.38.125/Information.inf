@@ -1,0 +1,19 @@
+PORT
+    NetworkingSoftwares-Main
+NAME
+    Slack
+VERSION
+    4.38.125
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    Cloud-based team communication platform
+WEBSITE
+    https://slack.com/
+DEPENDENCIES
+        @Utilities-Main:Cups>=2.4.6
+KERNELDEPENDENCIES
+OPTIONS
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES

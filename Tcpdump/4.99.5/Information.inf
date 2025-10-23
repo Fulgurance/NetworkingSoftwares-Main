@@ -1,0 +1,20 @@
+PORT
+    NetworkingSoftwares-Main
+NAME
+    Tcpdump
+VERSION
+    4.99.5
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    The TCPdump network dissector
+WEBSITE
+    https://github.com/the-tcpdump-group/tcpdump
+DEPENDENCIES
+        @ProgrammingTools-Main:Cmake>=3.27.2
+        @NetworkingLibraries-Main:Libpcap>=1.10.4
+KERNELDEPENDENCIES
+OPTIONS
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES

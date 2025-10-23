@@ -1,0 +1,19 @@
+PORT
+    NetworkingSoftwares-Main
+NAME
+    Iw
+VERSION
+    5.19.0
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    Tool to use nl80211
+WEBSITE
+    https://git.kernel.org/pub/scm/linux/kernel/git/jberg/iw.git
+DEPENDENCIES
+        @NetworkingLibraries-Main:Libnl>=3.7.0
+KERNELDEPENDENCIES
+OPTIONS
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES

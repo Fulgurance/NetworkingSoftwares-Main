@@ -1,0 +1,27 @@
+PORT
+    NetworkingSoftwares-Main
+NAME
+    Nordvpn
+VERSION
+    3.17.0
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    The most advanced VPN
+WEBSITE
+    https://nordvpn.com/
+DEPENDENCIES
+        @SystemGroups-Main:Nordvpn>=0.1.0
+        @NetworkingSoftwares-Main:NetworkManager>=1.44.0(Openvpn)
+KERNELDEPENDENCIES
+OPTIONS
+    name: Openrc
+    description: Enable openrc support
+    active: false
+    dependencies:
+        @InitSystems-Main:Openrc>=0.46.0
+    kernelDependencies:
+
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES

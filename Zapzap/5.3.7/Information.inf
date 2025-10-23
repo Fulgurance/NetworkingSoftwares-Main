@@ -1,0 +1,23 @@
+PORT
+    NetworkingSoftwares-Main
+NAME
+    Zapzap
+VERSION
+    5.3.7
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    WhatsApp desktop application written in Pyqt6 + PyQt6-WebEngine.
+WEBSITE
+    https://github.com/rafatosta/zapzap
+DEPENDENCIES
+        @BaseLibraries-Main:PyQt6>=0.0.0
+        @BaseLibraries-Main:PyQt6-WebEngine>=0.0.0
+        @BaseLibraries-Main:Dbus-Python>=0.0.0
+        @BaseLibraries-Main:Python-Gettext>=0.0.0
+        @BaseLibraries-Main:PyQt6-Sip>=13.8.0
+KERNELDEPENDENCIES
+OPTIONS
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES

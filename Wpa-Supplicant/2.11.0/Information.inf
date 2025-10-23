@@ -1,0 +1,60 @@
+PORT
+    NetworkingSoftwares-Main
+NAME
+    Wpa-Supplicant
+VERSION
+    2.11.0
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    WPA Supplicant with support for WPA and WPA2 (IEEE 802.11i / RSN)
+WEBSITE
+    https://w1.fi
+DEPENDENCIES
+        @NetworkingLibraries-Main:Libnl>=3.7.0
+KERNELDEPENDENCIES
+    CONFIG_NET
+    CONFIG_WIRELESS
+    CONFIG_CFG80211
+    CONFIG_MAC80211
+    CONFIG_NETDEVICES
+    CONFIG_WLAN
+OPTIONS
+    name: Openrc
+    description: Enable openrc support
+    active: false
+    dependencies:
+        @InitSystems-Main:Openrc>=0.46.0
+    kernelDependencies:
+
+    name: Desktop-File-Utils
+    description: Enable desktop-file-utils support to run update-desktop-database
+    active: false
+    dependencies:
+        @Utilities-Main:Desktop-File-Utils>=0.26.0
+    kernelDependencies:
+
+    name: Dbus
+    description: Enable dbus support (required for NetworkManager)
+    active: true
+    dependencies:
+        @Utilities-Main:Dbus>=1.14.8
+    kernelDependencies:
+
+    name: Libxml2
+    description: Enable libxml2 support (required for NetworkManager)
+    active: false
+    dependencies:
+        @BaseLibraries-Main:Libxml2>=2.10.4
+    kernelDependencies:
+
+    name: Qtbase
+    description: Enable qtbase support
+    active: false
+    dependencies:
+        @QtLibraries-Main:Qtbase>=5.0.0
+    kernelDependencies:
+
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES

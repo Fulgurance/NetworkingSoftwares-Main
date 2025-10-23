@@ -1,0 +1,60 @@
+PORT
+    NetworkingSoftwares-Main
+NAME
+    Thunderbird
+VERSION
+    115.2.0
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    Email, calendar, and contacts app that maximises your freedoms
+WEBSITE
+    https://www.thunderbird.net/en-GB/
+DEPENDENCIES
+        @ProgrammingTools-Main:Cbindgen>=0.24.3
+        @BaseLibraries-Main:Dbus-Glib>=0.112.0
+        @GraphicsLibraries-Main:Gtk>=3.24.38
+        @ProgrammingLanguages-Main:Llvm>=16.0.5(Clang)
+        @ProgrammingTools-Main:Nodejs>=18.17.1
+        @MultimediaSoftwares-Main:Pulseaudio>=16.1.0
+        @ProgrammingLanguages-Main:Python>=3.11.4(Sqlite)
+        @GraphicsLibraries-Main:Startup-Notification>=0.12.0
+        @Archivers-Main:Zip>=3.0.0
+        @Archivers-Main:Unzip>=6.0.0
+        @NetworkingLibraries-Main:Libevent>=2.1.12
+        @MultimediaLibraries-Main:Libvpx>=1.13.0
+        @ProgrammingTools-Main:Nasm>=2.16.1
+        @BaseLibraries-Main:Nspr>=4.35.0
+        @SecurityLibraries-Main:Nss>=3.92.0
+KERNELDEPENDENCIES
+OPTIONS
+    name: Elf-Hack
+    description: Enable elf-hack build option support to improve startup process (can cause failed installs)
+    active: false
+    dependencies:
+    kernelDependencies:
+
+    name: Pciutils
+    description: Enable pciutils support
+    active: false
+    dependencies:
+        @Utilities-Main:Pciutils>=3.10.0
+    kernelDependencies:
+
+    name: Wget
+    description: Enable wget support
+    active: false
+    dependencies:
+        @NetworkingSoftwares-Main:Wget>=1.21.4
+    kernelDependencies:
+
+    name: Wireless-Tools
+    description: Enable wireless-tools support
+    active: false
+    dependencies:
+        @NetworkingSoftwares-Main:Wireless-Tools>=29.0.0
+    kernelDependencies:
+
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES

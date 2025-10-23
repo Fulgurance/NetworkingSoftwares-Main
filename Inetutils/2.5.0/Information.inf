@@ -1,0 +1,20 @@
+PORT
+    NetworkingSoftwares-Main
+NAME
+    Inetutils
+VERSION
+    2.5.0
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    Collection of common network programs
+WEBSITE
+    https://www.gnu.org/software/inetutils/
+DEPENDENCIES
+        @SecurityLibraries-Main:Libxcrypt>=4.4.36
+        @BaseLibraries-Main:Readline>=8.2.0
+KERNELDEPENDENCIES
+OPTIONS
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES

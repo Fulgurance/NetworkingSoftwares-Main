@@ -1,0 +1,148 @@
+PORT
+    NetworkingSoftwares-Main
+NAME
+    NetworkManager
+VERSION
+    1.50.0
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    Network management daemon
+WEBSITE
+    https://gitlab.freedesktop.org/NetworkManager/NetworkManager
+DEPENDENCIES
+        @BaseLibraries-Main:Jansson>=2.14.0
+        @NetworkingLibraries-Main:Libndp>=1.8.0
+        @Utilities-Main:Dbus>=1.14.8
+        @SystemGroups-Main:Netdev>=0.1.0
+KERNELDEPENDENCIES
+OPTIONS
+    name: Openrc
+    description: Enable openrc support
+    active: false
+    dependencies:
+        @InitSystems-Main:Openrc>=0.46.0
+    kernelDependencies:
+
+    name: Curl
+    description: Enable curl support
+    active: false
+    dependencies:
+        @NetworkingLibraries-Main:Curl>=8.2.1
+    kernelDependencies:
+
+    name: Dhcpcd
+    description: Enable dhcpcd support
+    active: true
+    dependencies:
+        @NetworkingSoftwares-Main:Dhcpcd>=10.0.2
+    kernelDependencies:
+
+    name: Gobject-Introspection
+    description: Enable gobject-introspection support
+    active: false
+    dependencies:
+        @BaseLibraries-Main:Gobject-Introspection>=1.76.1
+    kernelDependencies:
+
+    name: Iptables
+    description: Enable iptables support
+    active: false
+    dependencies:
+        @Utilities-Main:Iptables>=1.8.9
+    kernelDependencies:
+
+    name: Newt
+    description: Enable newt support
+    active: false
+    dependencies:
+        @GraphicsLibraries-Main:Newt>=0.52.23
+    kernelDependencies:
+
+    name: Nss
+    description: Enable nss support
+    active: true
+    dependencies:
+        @SecurityLibraries-Main:Nss>=3.92.0
+    kernelDependencies:
+
+    name: Gnutls
+    description: Enable gnutls support
+    active: false
+    dependencies:
+        @SecurityLibraries-Main:Gnutls>=3.8.1
+    kernelDependencies:
+
+    name: Polkit
+    description: Enable polkit support
+    active: true
+    dependencies:
+        @SecuritySoftwares-Main:Polkit>=123.0.0
+    kernelDependencies:
+
+    name: Pygobject
+    description: Enable pygobject support
+    active: false
+    dependencies:
+        @BaseLibraries-Main:Pygobject>=3.44.1
+    kernelDependencies:
+
+    name: Elogind
+    description: Enable elogind support
+    active: true
+    dependencies:
+        @Utilities-Main:Elogind>=252.9.0
+    kernelDependencies:
+
+    name: Vala
+    description: Enable vala support
+    active: false
+    dependencies:
+        @ProgrammingLanguages-Main:Vala>=0.56.11
+    kernelDependencies:
+
+    name: Wpa-Supplicant
+    description: Enable wpa-supplicant support
+    active: true
+    dependencies:
+        @NetworkingSoftwares-Main:Wpa-Supplicant>=2.10.0(Dbus,Libxml2)
+    kernelDependencies:
+
+    name: Upower
+    description: Enable upower support
+    active: false
+    dependencies:
+        @Utilities-Main:Upower>=1.90.2
+    kernelDependencies:
+
+    name: Bluez
+    description: Enable bluez support
+    active: false
+    dependencies:
+        @NetworkingSoftwares-Main:Bluez>=5.68.0
+    kernelDependencies:
+
+    name: Libpsl
+    description: Enable libpsl support
+    active: false
+    dependencies:
+        @NetworkingLibraries-Main:Libpsl>=0.21.2
+    kernelDependencies:
+
+    name: ModemManager
+    description: Enable modemmanager support
+    active: false
+    dependencies:
+        @NetworkingSoftwares-Main:ModemManager>=1.18.12
+    kernelDependencies:
+
+    name: Ppp
+    description: Enable ppp support
+    active: false
+    dependencies:
+        @NetworkingSoftwares-Main:Ppp>=2.5.0
+    kernelDependencies:
+
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES

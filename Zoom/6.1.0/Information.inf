@@ -1,0 +1,23 @@
+PORT
+    NetworkingSoftwares-Main
+NAME
+    Zoom
+VERSION
+    6.1.0
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    Video conferencing and web conferencing platform
+WEBSITE
+    https://zoom.us/
+DEPENDENCIES
+        @QtLibraries-Main:Qtdeclarative>=5.0.0 ~ <6.0.0
+        @QtLibraries-Main:Qtgraphicaleffects>=5.0.0 ~ <6.0.0
+        @QtLibraries-Main:Qtsvg>=5.0.0 ~ <6.0.0
+        @QtLibraries-Main:Qtwayland>=5.0.0 ~ <6.0.0
+        @QtLibraries-Main:Qtx11extras>=5.0.0 ~ <6.0.0
+KERNELDEPENDENCIES
+OPTIONS
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES

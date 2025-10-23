@@ -1,0 +1,26 @@
+PORT
+    NetworkingSoftwares-Main
+NAME
+    Dnsmasq
+VERSION
+    2.90.0
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    Provides network infrastructure for small networks: DNS, DHCP, router advertisement and network boot
+WEBSITE
+    https://thekelleys.org.uk/dnsmasq/doc.html
+DEPENDENCIES
+        @SystemUsers-Main:Dnsmasq>=0.1.0
+KERNELDEPENDENCIES
+OPTIONS
+    name: Openrc
+    description: Enable openrc support
+    active: false
+    dependencies:
+        @InitSystems-Main:Openrc>=0.52.1
+    kernelDependencies:
+
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES

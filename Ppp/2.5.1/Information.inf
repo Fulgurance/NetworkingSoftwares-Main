@@ -1,0 +1,19 @@
+PORT
+    NetworkingSoftwares-Main
+NAME
+    Ppp
+VERSION
+    2.5.1
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    PPP daemon and associated utilities
+WEBSITE
+    https://github.com/ppp-project/ppp
+DEPENDENCIES
+        @BaseLibraries-Main:Libcap>=2.69.0
+KERNELDEPENDENCIES
+OPTIONS
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES

@@ -1,0 +1,23 @@
+PORT
+    NetworkingSoftwares-Main
+NAME
+    Wireless-Tools
+VERSION
+    29.0.0
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    Set of tools allowing to manipulate the Wireless Extensions
+WEBSITE
+    https://hewlettpackard.github.io/wireless-tools
+DEPENDENCIES
+        @SystemBase-Main:SystemBase>=0.2.0
+KERNELDEPENDENCIES
+    CONFIG_NET
+    CONFIG_WIRELESS
+    CONFIG_CFG80211
+    CONFIG_CFG80211_WEXT
+OPTIONS
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES

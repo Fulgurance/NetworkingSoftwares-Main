@@ -1,0 +1,20 @@
+PORT
+    NetworkingSoftwares-Main
+NAME
+    Inetutils
+VERSION
+    2.4.0
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    Collection of common network programs
+WEBSITE
+    https://www.gnu.org/software/inetutils/
+DEPENDENCIES
+        @SystemBase-Main:SystemBase>=0.2.0
+        @BaseLibraries-Main:Readline>=8.2.0
+KERNELDEPENDENCIES
+OPTIONS
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES

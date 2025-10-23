@@ -1,0 +1,61 @@
+PORT
+    NetworkingSoftwares-Main
+NAME
+    ModemManager
+VERSION
+    1.18.12
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    DBus-activated daemon which controls mobile broadband (2G/3G/4G) devices and connections
+WEBSITE
+    https://www.freedesktop.org/wiki/Software/ModemManager/
+DEPENDENCIES
+        @BaseLibraries-Main:Libgudev>=238.0.0
+KERNELDEPENDENCIES
+OPTIONS
+    name: Elogind
+    description: Enable elogind support
+    active: true
+    dependencies:
+        @Utilities-Main:Elogind>=252.9.0
+    kernelDependencies:
+
+    name: Gobject-Introspection
+    description: Enable gobject-introspection support
+    active: false
+    dependencies:
+        @BaseLibraries-Main:Gobject-Introspection>=1.76.1
+    kernelDependencies:
+
+    name: Libmbim
+    description: Enable libmbim support
+    active: false
+    dependencies:
+        @NetworkingLibraries-Main:Libmbim>=1.26.4
+    kernelDependencies:
+
+    name: Libqmi
+    description: Enable libqmi support
+    active: false
+    dependencies:
+        @NetworkingLibraries-Main:Libqmi>=1.30.8
+    kernelDependencies:
+
+    name: Polkit
+    description: Enable polkit support
+    active: true
+    dependencies:
+        @SecuritySoftwares-Main:Polkit>=123.0.0
+    kernelDependencies:
+
+    name: Vala
+    description: Enable vala support
+    active: false
+    dependencies:
+        @ProgrammingLanguages-Main:Vala>=0.56.11
+    kernelDependencies:
+
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES
