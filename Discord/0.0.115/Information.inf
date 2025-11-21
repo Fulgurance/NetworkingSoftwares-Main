@@ -1,0 +1,19 @@
+PORT
+    NetworkingSoftwares-Main
+NAME
+    Discord
+VERSION
+    0.0.115
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    Instant messaging and VoIP social platform
+WEBSITE
+    https://discord.com/
+DEPENDENCIES
+        @Utilities-Main:Cups>=2.4.6
+KERNELDEPENDENCIES
+OPTIONS
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES

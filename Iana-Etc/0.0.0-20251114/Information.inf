@@ -1,0 +1,19 @@
+PORT
+    NetworkingSoftwares-Main
+NAME
+    Iana-Etc
+VERSION
+    0.0.0-20241024
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    /etc/protocols and /etc/services files from IANA's Assigned Internet Protocol Numbers
+WEBSITE
+    https://github.com/Mic92/iana-etc
+DEPENDENCIES
+        @SystemBase-Main:SystemBase>=0.2.0
+KERNELDEPENDENCIES
+OPTIONS
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES

@@ -1,0 +1,47 @@
+PORT
+    NetworkingSoftwares-Main
+NAME
+    Openssh
+VERSION
+    10.2.0
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    Premier connectivity tool for remote login with the SSH protocol
+WEBSITE
+    https://www.openssh.com/
+DEPENDENCIES
+        @SystemBase-Main:SystemBase>=0.2.0
+KERNELDEPENDENCIES
+OPTIONS
+    name: Openrc
+    description: Enable openrc support
+    active: false
+    dependencies:
+        @InitSystems-Main:Openrc>=0.46.0
+    kernelDependencies:
+
+    name: Linux-Pam
+    description: Enable linux-pam support
+    active: true
+    dependencies:
+        @SecuritySoftwares-Main:Linux-Pam>=1.5.3
+    kernelDependencies:
+
+    name: Xorg-Applications
+    description: Enable xorg-applications support
+    active: false
+    dependencies:
+        @XorgBase-Main:Xorg-Applications>=21.1.8
+    kernelDependencies:
+
+    name: Krb5
+    description: Enable krb5 support
+    active: false
+    dependencies:
+        @NetworkingSoftwares-Main:Krb5>=1.21.2
+    kernelDependencies:
+
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES

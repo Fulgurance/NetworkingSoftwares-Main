@@ -1,0 +1,52 @@
+PORT
+    NetworkingSoftwares-Main
+NAME
+    Bluez
+VERSION
+    5.84.0
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    Provides support for the core Bluetooth layers and protocols
+WEBSITE
+    https://www.bluez.org/
+DEPENDENCIES
+        @Utilities-Main:Dbus>=1.14.8
+        @BaseLibraries-Main:Glib>=2.76.4
+        @BaseLibraries-Main:Libical>=3.0.16
+KERNELDEPENDENCIES
+    CONFIG_EXPERT
+    CONFIG_TIMERFD
+    CONFIG_EVENTFD
+    CONFIG_NE
+    CONFIG_BT
+    CONFIG_BT_BREDR
+    CONFIG_BT_RFCOMM
+    CONFIG_BT_RFCOMM_TTY
+    CONFIG_BT_BNEP
+    CONFIG_BT_BNEP_MC_FILTER
+    CONFIG_BT_BNEP_PROTO_FILTER
+    CONFIG_BT_HIDP
+    CONFIG_BT_HCIBTUSB
+    CONFIG_BT_HCIBTSDIO
+    CONFIG_BT_HCIUART
+    CONFIG_RFKILL
+    CONFIG_CRYPTO
+    CONFIG_CRYPTO_USER
+    CONFIG_CRYPTO_AES
+    CONFIG_CRYPTO_CCM
+    CONFIG_CRYPTO_CMAC
+    CONFIG_CRYPTO_USER_API_HASH
+    CONFIG_CRYPTO_USER_API_SKCIPHER
+    CONFIG_CRYPTO_USER_API_AEAD
+OPTIONS
+    name: Openrc
+    description: Enable openrc support
+    active: false
+    dependencies:
+        @InitSystems-Main:Openrc>=0.46.0
+    kernelDependencies:
+
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES

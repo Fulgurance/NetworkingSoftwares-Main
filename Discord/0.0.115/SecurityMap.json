@@ -1,0 +1,31 @@
+{
+  "defaultConfiguration":
+  {
+      "fileUser":       "root",
+      "fileGroup":      "root",
+      "fileMode":       "0644",
+      "directoryUser":  "root",
+      "directoryGroup": "root",
+      "directoryMode":  "0755"
+  },
+  "descriptors": [
+    {
+      "target": "/usr/share/discord",
+      "user":   "root",
+      "group":  "root",
+      "mode":   "0755"
+    },
+    {
+      "target": "/usr/share/applications/discord.desktop",
+      "user":   "root",
+      "group":  "root",
+      "mode":   "0644"
+    },
+    {
+      "target": "/usr/share/discord/chrome-sandbox",
+      "user":   "root",
+      "group":  "root",
+      "mode":   "4755"
+    }
+  ]
+}

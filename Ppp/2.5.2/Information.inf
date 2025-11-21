@@ -1,17 +1,17 @@
 PORT
     NetworkingSoftwares-Main
 NAME
-    Iw
+    Ppp
 VERSION
-    5.19.0
+    2.5.2
 ARCHITECTURES
     x86_64
 DESCRIPTION
-    Tool to use nl80211
+    PPP daemon and associated utilities
 WEBSITE
-    https://git.kernel.org/pub/scm/linux/kernel/git/jberg/iw.git
+    https://github.com/ppp-project/ppp
 DEPENDENCIES
-        @NetworkingLibraries-Main:Libnl>=3.7.0
+        @BaseLibraries-Main:Libcap>=2.69.0
 KERNELDEPENDENCIES
 OPTIONS
 UNIQUEDEPENDENCIES

@@ -1,0 +1,61 @@
+PORT
+    NetworkingSoftwares-Main
+NAME
+    Mit-Krb5
+VERSION
+    1.21.3
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    The free MIT implementation of the kerberos network authentication protocol
+WEBSITE
+    https://web.mit.edu/kerberos/dist/
+DEPENDENCIES
+        @FileSystems-Main:E2fsprogs>=1.47.0
+KERNELDEPENDENCIES
+OPTIONS
+    name: Openrc
+    description: Enable openrc support
+    active: false
+    dependencies:
+        @InitSystems-Main:Openrc>=0.52.1
+    kernelDependencies:
+
+    name: Bind
+    description: Enable bind support
+    active: false
+    dependencies:
+        @NetworkingSoftwares-Main:Bind>=9.18.18
+    kernelDependencies:
+
+    name: Gnupg
+    description: Enable gnupg support
+    active: false
+    dependencies:
+        @SecuritySoftwares-Main:Gnupg>=2.4.3
+    kernelDependencies:
+
+    name: Keyutils
+    description: Enable keyutils support
+    active: false
+    dependencies:
+        @SecuritySoftwares-Main:Keyutils>=1.6.1
+    kernelDependencies:
+
+    name: Openldap
+    description: Enable openldap support
+    active: false
+    dependencies:
+        @BaseLibraries-Main:Openldap>=2.6.6
+    kernelDependencies:
+
+    name: Yasm
+    description: Enable yasm support
+    active: false
+    dependencies:
+        @ProgrammingTools-Main:Yasm>=1.3.0
+    kernelDependencies:
+
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES
