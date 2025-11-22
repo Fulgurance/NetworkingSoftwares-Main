@@ -32,7 +32,7 @@ OPTIONS
     description: Enable xorg-applications support
     active: false
     dependencies:
-        @XorgBase-Main:Xorg-Applications>=21.1.8
+        @XorgBase-Main:Xorg-Applications>=0.0.0
     kernelDependencies:
 
     name: Krb5
