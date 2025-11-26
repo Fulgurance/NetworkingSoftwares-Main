@@ -19,7 +19,7 @@ class Target < ISM::Software
                                     --with-system-verto=no      \
                                     --enable-dns-for-realm",
                         path:       buildDirectoryPath,
-                        configureDirectory: @buildDirectoryNames["MainBuild"]
+                        configureDirectory: @buildDirectoryNames["MainBuild"])
     end
 
     def build
