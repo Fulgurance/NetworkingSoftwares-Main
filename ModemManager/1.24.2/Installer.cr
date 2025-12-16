@@ -16,6 +16,7 @@ class Target < ISM::Software
                                     -Dbash_completion=false                 \
                                     -Dqrtr=false                            \
                                     -Dmbim=false                            \
+                                    -Dqmi=false                             \
                                     -Dsystemdsystemunitdir=no",
                         path:       mainWorkDirectoryPath)
     end
