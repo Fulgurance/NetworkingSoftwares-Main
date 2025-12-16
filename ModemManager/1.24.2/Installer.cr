@@ -15,6 +15,7 @@ class Target < ISM::Software
                                     --buildtype=release                     \
                                     -Dbash_completion=false                 \
                                     -Dqrtr=false                            \
+                                    -Dmbim=false                            \
                                     -Dsystemdsystemunitdir=no",
                         path:       mainWorkDirectoryPath)
     end
